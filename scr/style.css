@@ -1,0 +1,19 @@
+*{
+  margin:0 ;
+  padding: 0;
+  box-sizing: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+    background-color:#FFE4E1;
+}
+
+nav .logo{
+     display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
