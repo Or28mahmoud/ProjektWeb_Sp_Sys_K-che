@@ -32,52 +32,46 @@ nav .logo{
 nav .nav-link{
   text-decoration: none;
 }
-.spezialitäten-section{
+.spezialitäten-section1{
   color: rgb(173, 108, 230);
   margin:0 ;
   padding-top: 5rem;
+  text-align: center;
   
-}
-
-.spezialität{
-
-  margin-left:40%;
-   width:   100px;
-   height:  100px;
 }
 
 .spezialitäten-section .spezialitäten{ 
  width: 100%;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 0 0rem;
   display: flex;
   flex-direction: column;
 }
 
 
-
-
-.spezialität h3{
-color: rgb(0, 0, 0);
-
-
-  
+.spezialitäten-section{
+  margin: 0;
 }
 
-.spezialität3 {
 
-  width: 727px;
-  height:484px;
-}
 
 
 .spezialitäten .spezialitätenBox{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: flex-start;
+  margin: 0;
+  padding: 10px;
 }
 
-.spezialitäten{
+.spezialitäten-section .spezialitäten{
 margin: 0;
+}
 
+.spezialität{
+  padding: 20px;
+}
+
+body {
+  background-color: darkslategrey;
 }
