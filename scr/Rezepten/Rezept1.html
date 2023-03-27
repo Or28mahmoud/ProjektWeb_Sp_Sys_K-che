@@ -8,6 +8,7 @@
   <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
     <div class ="f2">
 
     </div>
@@ -15,12 +16,33 @@
         <br> 
         Tabuleh
     </h1>
-    <div>
-        <img src="img/tabuleh.jpg"
-        alt="spezialität1" width="400" height="250">
-        
-    </div>
+    
+<div class="slideshow-container">
 
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="../images/tabulah1.jpg" width="600" height="500" alt="Tabuleh">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="../images/kibe-feito-e-tabule-muito.jpg" width="600" height="500" alt="Tabuleh">
+   
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div class ="dom">
+
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
     <div>
         <ol> 
          <h3>Zutaten: für 4 Personen</h3>
@@ -58,5 +80,33 @@
 
     </div>
     
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 </body>
 </html>

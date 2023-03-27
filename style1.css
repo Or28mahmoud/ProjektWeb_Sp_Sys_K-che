@@ -88,9 +88,8 @@ padding-right:55px ;
   text-align: center;
   text-shadow: 10px;
   font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration-color: beige;
-  
+  font-family: cursive;
+  color: rgb(20, 1, 36);
   
 }
 .button{
@@ -136,10 +135,18 @@ body{
 }
 
 .spezialität img{
-
+width: 400px;
+height: 300px;
+border:2px solid #011044;
+border-radius: 13px;
+box-shadow: 4px 7px 7px 0px #00000042 ;
+cursor: pointer;
 transition: transform .2s;
+
 }
 .spezialität img:hover{
+  filter: contrast(150%);
 transform: scale(1.3);
 
 }
+
