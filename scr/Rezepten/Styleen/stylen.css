@@ -21,7 +21,7 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   width: 600px;
-  height: 500;
+  height: 500px;
   position: relative;
   margin: auto;
 }
@@ -117,26 +117,72 @@ cursor: pointer;
 
 .slideshow-container img:hover{
   filter: contrast(150%);
-transform: scale(1.2);
+  transform: scale(1.2);
 }
-
-
 .Zutaten  {
  
  text-align:center; 
+ margin: 200px ;
+ margin-top: 0;
+height: 600px;
+ 
 }
 .Zutaten ul{
   display: inline-block;
   text-align:start;
-}
-.Zubereitung{
-  text-align:center; 
-  margin: 200px ;
-  margin-top: 0;
+
+width: 450px;
+  
+  margin: 100px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(3, 79, 74);
  
 }
-.Zubereitung ul{
-  display: inline-block;
-  text-align:start;
-  
+
+
+ul li{
+  display: flex;
+  background-color: rgb(76, 184, 179);
+  padding: 10px 20px;
+  margin: 5px;
+  transition: .5s;
+ 
 }
+ul li:hover{
+  transform: scale(1.06);
+  background: darkturquoise;
+}
+
+
+.Zubereitung  {
+ 
+  text-align:center; 
+  margin: 200px ;
+   margin-top: 0;
+  
+ }
+ .Zubereitung ol{
+   display: inline-block;
+   text-align:start;
+   width: 450px;
+   margin: 100px 0;
+   padding: 10px;
+   box-sizing: border-box;
+   background-color: rgb(3, 79, 74);
+   box-shadow: #250f0f;
+ }
+ 
+ 
+ ol li{
+   display: flex;
+  background-color: rgb(76, 184, 179);
+   padding: 10px 20px;
+   
+   margin: 5px;
+   transition: .5s;
+ }
+ ol li:hover{
+   transform: scale(1.06);
+   background: darkturquoise;
+ }

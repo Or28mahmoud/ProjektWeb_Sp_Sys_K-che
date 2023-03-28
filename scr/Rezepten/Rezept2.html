@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="../Rezepten/Styleen/stylen1.css">
 
 <head>
   <title>Kabseh</title>
@@ -12,14 +12,41 @@
         <br> 
         Kabseh
     </h1>
-    <div>
-        <img src="img/Kabseh.jpeg"
-        alt="spezialität1" width="400" height="250">
-        
+  <div class="slideshow-container">
+  
+  
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="../Rezepten/img/Kabseh.jpeg" width="600" height="500" alt="Kabseh">
+  
     </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="../Rezepten/img/kabseh1.jpeg" width="600" height="500" alt="Kabseh">
+  
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="../Rezepten/img/kabseh2.jpg" width="600" height="500" alt="Kabseh">
+    
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div class="dom">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
-    <div>
-        <ol> 
+     
+    <div  class="Zutaten">
+        <ul> 
          <h3>Zutaten: für 6 Personen</h3>
        
          <li> 1 kg	Hähnchen, in Stücke zerteilt</li>
@@ -41,9 +68,9 @@
         <li>50 g	Pinienkerne</li>
         <li>700 ml	Wasser, warm</li>
          
-        </ol>
+        </ul>
     </div>
-  <div>  
+  <div class ="Zubereitung">  
     <ol>
        <h3>Zubereitung</h3> 
         <li>Die gehackten Zwiebeln im Öl anschwitzen.
@@ -74,5 +101,33 @@
 
 
     </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
     
 </body>
