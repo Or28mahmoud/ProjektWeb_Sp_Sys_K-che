@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="../Rezepten/Styleen/stylen2.css">
 
 <head>
   <title>Kabseh</title>
@@ -9,17 +9,43 @@
 </head>
 <body>
     <h1 class="Überschrift">Nachspeise
-        <br> </br> 
+        <br> 
         Qatayef
     </h1>
-    <div>
-        <img src="img/Qatayef.jpeg"
-        alt="spezialität1" width="400" height="250">
-        
-    </div>
+  <div class="slideshow-container">
 
-    <div>
-        <ol> 
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="../Rezepten/img/Qatayef.jpeg" width="600" height="500" alt="Tabuleh">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="../Rezepten/img/Qatayef1.jpg" width="600" height="500" alt="Tabuleh">
+
+  </div>
+ <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="../Rezepten/img/Qatayef2.jpg" width="600" height="500" alt="Kabseh">
+    
+    </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div class ="dom">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+    <div class ="Zutaten">
+        <ul> 
          <h3>Zutaten: für 6 Personen</h3>
        
          <li>250 g	Mehl</li>
@@ -35,11 +61,11 @@
         <li>1 Tasse	Wasser</li>
         <li>1 EL	Zitronensaft</li>
         
-        </ol>
+        </ul>
       
 
     </div>
-  <div>  
+  <div class ="Zubereitung">  
     <ol>
        <h3>Zubereitung</h3> 
         <li>Teig:<br> 
@@ -62,9 +88,37 @@
         <li>Die Pfannkuchen mit dem Pudding füllen und mit dem Sirup anrichten.</li>
         
     </ol>
-    
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 
 
     </div>
     
 </body>
+</html>
