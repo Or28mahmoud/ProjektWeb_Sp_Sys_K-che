@@ -59,13 +59,13 @@
 
 }
 .log1{
-  width: 100%;
-  font-size: 1.875em;
-  font-family: "Lucida Console", "Courier New", monospace, sans-serif;
-  margin-left:20%;
-  color:rgb(18, 11, 78);
-  text-shadow: 2px 2px 4px rgb(136, 134, 143);
-  text-align: center;
+   width: 100%;
+    font-size: 1.875em;
+    font-family: "Lucida Console", "Courier New", monospace, sans-serif;
+    margin-left:28%;
+    color:rgb(18, 11, 78);
+    text-shadow: 2px 2px 4px rgb(136, 134, 143);
+    text-align: center;
 }
 .log2{
  height:70px;

@@ -1,0 +1,75 @@
+
+body{
+    background-image: url(../scr/images/wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.profilen {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  
+
+  }
+  .profil {
+  float: left;
+  margin-left: 20px;
+  padding: 2px 16px;
+  margin-top: 50px;
+  margin-left: 300px;
+  background-color: rgb(234, 228, 215);
+  border-radius: 8px;
+  border-style: solid;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  /* On mouse-over, add a deeper shadow */
+  .profil:hover {
+    box-shadow: 4px 20px 20px 4px rgba(0, 0, 0, 0.621);
+  }
+  
+ img{
+    border-radius: 8px;
+    border-style: hidden;
+ }
+ h4{
+    font-family:math;
+  }
+  .logo{
+    background-image: url(../scr/images/hintergrund2.jpeg);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 8px 30px  5px rgba(0,0,0,0.2);
+  
+  }
+  .log1{
+    width: 100%;
+    font-size: 1.875em;
+    font-family: "Lucida Console", "Courier New", monospace, sans-serif;
+    margin-left:10%;
+    color:rgb(18, 11, 78);
+    text-shadow: 2px 2px 4px rgb(136, 134, 143);
+    text-align: center;
+  }
+
+  h5{
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(234, 228, 215);
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    font-family: "Lucida Console", "Courier New", monospace, sans-serif;
+    font-size:x-large;
+  }
+
+  h3{
+    color:rgb(18, 11, 78);
+    text-shadow: 2px 2px 5px rgb(116, 202, 245);
+  }
