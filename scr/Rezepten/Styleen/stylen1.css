@@ -4,19 +4,18 @@
     background-color: antiquewhite;
 }
 
-* {
-  background-color: rgb(74, 154, 154)
-  
- 
-}
+
 
 body {
   font-family: Verdana, sans-serif;
-   margin:0
-
+   margin:0;
+   background-color: rgb(74, 154, 154);
+  
   }
 .mySlides {display: none}
 img {vertical-align: middle;}
+
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -24,7 +23,9 @@ img {vertical-align: middle;}
   height: 500px;
   position: relative;
   margin: auto;
+ 
 }
+
 .dom{
     text-align: center;}
 /* Next & previous buttons */
@@ -185,4 +186,22 @@ ul li:hover{
  ol li:hover{
    transform: scale(1.06);
    background: darkturquoise;
+ }
+ .logo{
+   width: 50%;
+   height:70px;
+   background-color:#717171;
+   border-radius: 10px;
+   margin-left:  25%;
+  
+  
+   
+
+ }
+ .Überschrift{
+  width:140px;
+  margin-left: 40%;
+  text-align: center;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
