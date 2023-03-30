@@ -238,8 +238,20 @@ button:hover{
 h3{
   color: rgb(248, 248, 228);
  }
- form {
- margin-left: 49.5em;
- display: flex;
  
- }
+ .pill-nav a {
+  margin-right: 0;
+  display:inline-block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+ 
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #86c3c7;
+  color: black;
+}

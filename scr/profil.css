@@ -1,8 +1,12 @@
 
 body{
-    background-image: url(../scr/images/wallpaper.jpeg);
+   /*  background-image: url(../scr/images/wallpaper.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;  */
+    margin:0;
+    border:0;
+    background-image: linear-gradient(to top, rgba(132, 244, 224, 0), rgb(2, 65, 71));
+
   }
   
 .profilen {
@@ -10,7 +14,7 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-  
+   
 
   }
   .profil {
@@ -64,12 +68,42 @@ body{
     text-align: center;
     margin-top: 100px;
     color: rgb(234, 228, 215);
-    text-shadow: 10px 10px 10px rgb(0, 0, 0);
-    font-family: "Lucida Console", "Courier New", monospace, sans-serif;
-    font-size:x-large;
+   text-shadow: 10px 10px 10px rgb(0, 0, 0); 
+    font-family:fantasy;  
+     font-size:x-large;
+     
   }
 
   h3{
     color:rgb(18, 11, 78);
     text-shadow: 2px 2px 5px rgb(116, 202, 245);
   }
+
+
+.about{
+  font-family:fantasy;
+  border: 2px;
+  color: rgb(234, 228, 215);
+  text-align: center;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.994);
+ 
+}
+
+.pill-nav a {
+  margin-right: 0;
+  display:inline-block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+ 
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #86c3c7;
+  color: black;
+}
+
+

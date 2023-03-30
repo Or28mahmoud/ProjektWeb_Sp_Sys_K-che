@@ -202,3 +202,19 @@ ul li:hover{
    font-size: large;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
+ .pill-nav a {
+  margin-right: 0;
+  display:inline-block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+ 
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #86c3c7;
+  color: black;
+}
