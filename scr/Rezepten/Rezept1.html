@@ -133,5 +133,13 @@
         dots[slideIndex - 1].className += " active";
       }
     </script>
+    <button id="print-button">Print Recipe</button>
+    <script>
+    const printButton = document.getElementById("print-button");
+    
+    printButton.addEventListener("click", function() {
+      window.print();
+    });
+    </script>
 </body>
 </html>
