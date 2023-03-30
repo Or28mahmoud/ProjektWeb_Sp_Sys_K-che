@@ -7,7 +7,8 @@
     <meta data-n-head="ssr" charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta data-n-head="ssr" content="width=device-width, initial-scale=1">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <body>
 
@@ -19,8 +20,12 @@
         <div class="log2">
             <!--a href="#" class="nave-link">Hauptseite </a-->
             <!-- <button class="button" type="button" id="myBtn" onclick="myFunction()"> Menü</button> -->
-            <form action="../scr/Profil.html" method="get" target="_blank">
-                <button type="submit">about us</button>
+            <!-- <form action="../scr/Profil.html" method="get" target="_blank">
+                <button type="submit">about us</button> -->
+                <div class="pill-nav">
+                    <a href="../scr/Hauptseite.html">Home</a>
+                    <a href="../scr/Profil.html">About us</a>
+                  </div>   
         </div>
     </div>
 
@@ -38,14 +43,14 @@
             <div class="spezialität1">
                 <a href="Rezepten/Rezept1.html"><img id="test1" class="foto1" src="../scr/images/tabuleh.jpg"
                         alt="spezialität1"></a>
-                <h3>Vorspeise 🥗&nbsp;:&nbsp;Tabuleh</h3>
+                <h3 class = "myInput">Vorspeise 🥗&nbsp;:&nbsp;Tabuleh </h3> 
             </div>
 
 
             <div class="spezialität1">
                 <a href="../scr/Rezepten/Rezept2.html"><img class="foto1" id="test2" src="../scr/images/Kabseh.jpeg"
                         alt="spezialität1"></a>
-                <h3>Speise 🍲&nbsp;:&nbsp;Kabseh</h3>
+                <h3 class = "myInput">Speise 🍲&nbsp;:&nbsp;Kabseh</h3>
             </div>
 
 
@@ -53,7 +58,7 @@
             <div class="spezialität1">
                 <a href="../scr/Rezepten/Rezept3.html"><img class="foto1" id="test3" src="../scr/images/Qatayef.jpeg"
                         alt="spezialität1"></a>
-                <h3>Nachspeise 🥟&nbsp;:&nbsp;Qatayef</h3>
+                <h3 class = "myInput">Nachspeise 🥟&nbsp;:&nbsp;Qatayef</h3>
             </div>
         </div>
         <div class="ff">
@@ -67,26 +72,35 @@
             <div class="spezialität2">
                 <a href="../scr/Rezepten/Rezept5.html"><img class="foto1" id="test5"
                         src="../scr/images/Kousa-Mahshi.jpeg" alt="spezialität1"></a>
-                <h3>Speise 🍲&nbsp;:&nbsp;Mahashi</h3>
+                <h3 class = "myInput">Speise 🍲&nbsp;:&nbsp;Mahashi</h3>
             </div>
             <div class="spezialität2">
                 <a href="../scr/Rezepten/Rezept6.html"><img class="foto1" id="test6"
                         src="../scr/images/halawet aljebn.jpeg" alt="spezialität1" width="450" height="250"></a>
-                <h3>Nachspeise 🥟&nbsp;:&nbsp;Halawet Aljebn</h3>
+                <h3 class = "myInput">Nachspeise 🥟&nbsp;:&nbsp;Halawet Aljebn</h3>
             </div>
 
         </div>
     </div>
- <!--    <script>
-        function myFunction() {
-            var x = document.getElementById("myBtn");
-            x.disabled = true;
-        }
-       function myfun(){
-          window.location.href ="www.google.com";
-       }
+    <script>
+
+     $(document).ready(function(){
+        
+      $("#myInput").on("keyup", function() {
+        
+     var value = $(this).val().toLowerCase();
+        
+     $("#myTable tr").filter(function() {
+        
+     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        
+    });
+        
+     });
+        
+    });
+        
     </script>
- -->
 </body>
 
 </html>
