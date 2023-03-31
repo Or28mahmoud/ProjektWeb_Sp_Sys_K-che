@@ -259,12 +259,3 @@ cursor: pointer;
   background-color: #86c3c7;
   color: black;
 }
-.fa {
-  font-size: 700px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.fa:hover {
-  color: darkblue;
-}
