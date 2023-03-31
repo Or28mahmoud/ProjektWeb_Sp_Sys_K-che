@@ -1,5 +1,5 @@
 <?php 
- require_once("../Loginsystem/Configuration.php");
+ require_once('../ProjektWeb_Sp_Sys_K-che/Configuration.php');
 
     function login($user_username,$password_user){
      
@@ -21,9 +21,14 @@
         
         if($password_user ==$pass){
             
-             echo "sie sind eingeloggt";
-              header('Location: ..\ProjektWeb_Sp_Sys_K-che\scr\Hauptseite.html');
-            }else{
+          
+             require("Hauptseite.html")   ;
+             // header('Location: http://localhost/HTMLKlassen/ProjektWeb_Sp_Sys_K-che/scr/Loginsystem/Hauptseite.html');
+           
+
+             
+        }else{
+
             echo"Password ist falsch eingetregen";
         }}
         else{
