@@ -53,7 +53,7 @@
 
 .logo{
   background-image: url(../scr/images/hintergrund2.jpeg);
-  width: 100%;
+  max-width: auto;
   display: flex;
   flex-direction: row;
 
