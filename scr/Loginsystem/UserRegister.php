@@ -9,7 +9,7 @@
 
     $stmt->execute();
     $userda = $stmt->fetchColumn();
-    var_dump($userda);
+    
      if (!$userda) {
 
       $sql = "INSERT INTO User (user_id,user_name,user_username,password_user)
