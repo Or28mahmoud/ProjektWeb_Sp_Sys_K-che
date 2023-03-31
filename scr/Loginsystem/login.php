@@ -22,7 +22,7 @@
         if($password_user ==$pass){
             
              echo "sie sind eingeloggt";
-            // require("../ProjektWeb_Sp_Sys_K-che/scr/Hauptseite.html");
+             require("Hauptseite.html");
         }else{
             echo"Password ist falsch eingetregen";
         }}
