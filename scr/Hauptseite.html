@@ -7,8 +7,8 @@
     <meta data-n-head="ssr" charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta data-n-head="ssr" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
+</head>
 
 <body>
 
@@ -23,9 +23,15 @@
             <!-- <form action="../scr/Profil.html" method="get" target="_blank">
                 <button type="submit">about us</button> -->
                 <div class="pill-nav">
-                    <a href="../scr/Hauptseite.html">Home</a>
-                    <a href="../scr/Profil.html">About</a>
-                  </div>   
+                    <div class ="suche">
+                       
+                       <form >
+                        <input type="search" name="suchen" id="navbar-search-autocomplete" title="Suche" placeholder="Suche....">
+                       </form></div>
+
+                   <div class ="home"> <a href="../scr/Hauptseite.html">Home</a></div>
+                   <div class ="About"><a href="../scr/Profil.html">About</a></div>
+                </div>   
         </div>
     </div>
 
@@ -82,25 +88,7 @@
 
         </div>
     </div>
-    <script>
-
-     $(document).ready(function(){
-        
-      $("#myInput").on("keyup", function() {
-        
-     var value = $(this).val().toLowerCase();
-        
-     $("#myTable tr").filter(function() {
-        
-     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        
-    });
-        
-     });
-        
-    });
-        
-    </script>
+    <script src="javascript/Suche.js"></script>
 </body>
 
 </html>

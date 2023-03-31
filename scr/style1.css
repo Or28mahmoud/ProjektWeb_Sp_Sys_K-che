@@ -169,10 +169,32 @@ transform: scale(1.3);
   font-size: 17px;
   border-radius: 5px;
  
+ 
 }
+ 
 
 /* Change the color of links on mouse-over */
 .pill-nav a:hover {
   background-color: #86c3c7;
   color: black;
+}
+.pill-nav{
+  margin-left:20% ;
+  width: 80%;
+  display:flex;
+  flex-direction:row;
+}
+.suche{
+  margin-top: 5px;
+  width: 50%;
+}
+.home{
+ 
+  width:25%;
+  margin-left:10% ;
+
+}
+.About{
+  width: 25%;
+  margin-left:10% ;
 }
