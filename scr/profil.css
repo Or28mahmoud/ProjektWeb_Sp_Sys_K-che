@@ -102,14 +102,13 @@ body{
 }
 
 .pill-nav a {
-  margin-right: 0;
   display:inline-block;
-  color: black;
+  color:rgb(18, 11, 78);  
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
   border-radius: 5px;
- 
+  font-weight: 600;
 }
 
 /* Change the color of links on mouse-over */
@@ -117,5 +116,10 @@ body{
   background-color: #86c3c7;
   color: black;
 }
+.pill-nav{
+ 
+  display: flex;
+}
+
 
 

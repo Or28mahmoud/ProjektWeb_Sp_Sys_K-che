@@ -126,7 +126,7 @@ cursor: pointer;
   text-align:center; 
   margin: 200px ;
   margin-top: 0;
-  height: 1000px;
+  height: 1100px;
   
  }
  .Zutaten ul{
@@ -159,7 +159,7 @@ cursor: pointer;
  .Zubereitung  {
   
    text-align:center; 
-    margin: 0,200px,200px,200px ;
+   margin: 0,200px,200px,200px ;
   
    
   }
@@ -192,7 +192,7 @@ cursor: pointer;
      background-image: url(../img/hintergrund2.jpeg);
      width: 100%;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      box-shadow: 5px 8px 30px  5px rgba(0,0,0,0.2);
    
    }
@@ -245,18 +245,21 @@ cursor: pointer;
    background-color: rgb(236, 217, 153) ;
  }
  .pill-nav a {
-  margin-right: 0;
   display:inline-block;
-  color: black;
+  color:rgb(18, 11, 78);  
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
   border-radius: 5px;
- 
+  font-weight: 600;
 }
 
 /* Change the color of links on mouse-over */
 .pill-nav a:hover {
   background-color: #86c3c7;
   color: black;
+}
+.pill-nav{
+  margin-left: 90%;
+  display: flex;
 }

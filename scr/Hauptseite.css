@@ -26,6 +26,7 @@
   align-items: center;
   padding-right: 80px;
   padding-left:  40px;
+ 
 }
 
 .spezialität1 {
@@ -136,7 +137,9 @@ padding-right:55px ;
 body{
   background-color: darkslategray;
 }
-
+.spezialität{
+  margin-right: 80px;
+}
 .spezialität img{
 width: 400px;
 height: 300px;
@@ -159,19 +162,16 @@ transform: scale(1.3);
   text-shadow: 2px 2px 4px rgb(33, 33, 41);
 }
 
-
 .pill-nav a {
-  margin-right: 0;
   display:inline-block;
-  color: black;
+  color:rgb(18, 11, 78);  
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
   border-radius: 5px;
- 
- 
+  font-weight: 600;
 }
- 
+
 
 /* Change the color of links on mouse-over */
 .pill-nav a:hover {
@@ -179,11 +179,10 @@ transform: scale(1.3);
   color: black;
 }
 .pill-nav{
-  margin-right:50% ;
-  width: 80%;
-  display:flex;
-  flex-direction:row;
+  margin-left: 3%;
+  display: flex;
 }
+
 input[type=text] {
   width: 200px;
   box-sizing: border-box;
@@ -197,13 +196,3 @@ input[type=text] {
 
 }
 
-.home{
- 
-  width:25%;
-  
-
-}
-.About{
-  width: 25%;
- 
-}
