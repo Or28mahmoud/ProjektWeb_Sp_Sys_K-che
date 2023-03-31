@@ -1,15 +1,18 @@
-const navbarAutocomplete = document.querySelector('#navbar-search-autocomplete');
+const navbarAutocomplete = document.querySelector("#Such_ID");
 const navbarData = ['Tabuleh', 'Kabseh', 'Qatayef', 'Hummus', 'Mahashi','Halawet Aljebn'];
-const navbarDataFilter = (value) => {
-  return navbarData.filter((item) => {
-    return item.toLowerCase().startsWith(value.toLowerCase());
-  });
-};
+const navadess =['../Rezepten/Rezept1.html','../Rezepten/Rezept2.html','../Rezepten/Rezept3.html','../Rezepten/Rezept4.html','../Rezepten/Rezept5.html',"../Rezepten/Rezept6.html"];
 
-function fun(){
-    for(let i =0;i<navbarData.length;i++){
-      console.log(navbarData[i]);
-    }
-    
+
+
+function suchfunktion(){
+  let navbar ;
+   for(let i =0 ;navbarData.length;i++){
+if(navbarData[i] == navbarAutocomplete){
+        navbar=navbarData[i];
+        window.open(navadess[i]);
+
+}else{
+      Window.write("Falsche Eingabe")
+  } }
+
 }
-fun();
