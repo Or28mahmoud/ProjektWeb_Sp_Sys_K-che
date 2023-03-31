@@ -33,4 +33,6 @@
     printButton.addEventListener("click", function() {
       window.print();
     });
-   
+    function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
+    }
